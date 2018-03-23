@@ -1,0 +1,143 @@
+<doctype!>
+<head>
+
+<style>
+  fieldset{
+
+    background-color: lightyellow;
+    border: 10px solid  yellow;
+    margin-bottom: 10px;
+    width: 720px;
+  }
+
+ label{
+
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+
+  }
+
+
+.contact{
+
+    width: auto;
+    
+}
+
+.left{
+  width:40px;
+  color:white;
+  background: red;
+  padding:3px;
+
+
+}
+
+.right{
+  width:40px;
+  color:white;
+  background: purple;
+  padding:3px;
+
+}
+
+textarea{
+
+    width: 360px;
+    height: 50px;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+<h1>
+	Please Enter Your Details For Our Dating Website!
+</h1>
+<form  action="https://" method="post" enctype="multipart/form-data">
+<fieldset>
+	<legend> Your Face</legend> 
+
+	<label for="file">Your Image:</label>
+	<input type="file" id="file" name="filetobeupload" required>
+	<br>
+	<label for="preview">Image Preview:</label>
+	 <img src="" id="preview" >
+
+</fieldset>
+
+<fieldset>
+	
+	<legend> Your General Details</legend>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="Name" placeholder=" Your Full Name" required=""> <br> 
+
+	<label for="Gender">Gender:</label>
+	<input type="radio" id="Gender" name="Gender" value="Male" required="">Male
+	<input type="radio" name="Gender" value="Female" required="">Female <br>
+
+	<label for="Age">Age:</label>
+	<input type="number" id="Age" name="Age" required=""><br>
+
+	<label for="Date">Date of Birth: </label>
+	<input type="Date" id="Date" name="Date"><br>
+
+    <label for="Color">Favorite Color:</label>
+    <input type="Color" id="Color" name="Color"> <br>
+
+    <label for="Country">Which Country:</label>
+    <select id="Country"  name="Country">
+        <option name="Country" value="No Selection">No Selection</option>
+    	<option name="Country" value="India">India</option>
+    	<option name="Country" value="USA">USA</option>
+    	<option name="Country" value="China">China</option>
+    	<option name="Country" value="Canada">Canada</option>
+    	<option name="Country" value="Mexico">Mexico</option> 
+    	
+    </select>
+
+</fieldset>
+
+<fieldset>
+	<legend>Your indicators</legend>
+
+    <label class="height" for="Height">Height:</label> <span class="left">
+    Short</span><input  id="Height" type="range" name="Height" min="0" max="100" step="5" value="50"><span class="right">Tall</span> <br> 
+
+   <label for="Salary">Salary:</label><span class="left">
+   Poor</span><input type="range" name="Salary" id="Salary" min="0" max="100" step="5" value="50"><span class="right">Rich</span>  <br>
+
+</fieldset>
+
+<fieldset>
+	<legend>Your Contact Information</legend>
+
+	<label for="Email">Email</label>
+	<input type="Email" name="Email" id="Email" required> <br>
+
+    <label for="Mobile">Mobile:</label>
+    <input type="tel" name="Mobile" id="Mobile" required> <br>
+
+    <label for="Address">Address:</label>
+    <textarea name="Address" id="Address" rows="2" cols="26"> </textarea> <br>
+
+    <label class="contact" for="contact">Method to contact you:</label>
+    <input type="checkbox" name="contact" id="contact" value="Email">Email
+    <input type="checkbox" name="contact" id="contact" value="Whatsapp">Whatsapp 
+    <input type="checkbox" name="contact" id="contact" value="In-app">In-app Chat 
+</fieldset>
+
+<br>
+    <input type="Submit" name="Submit" value="Submit!">
+
+</form>
+
+
+</body>
+
+
